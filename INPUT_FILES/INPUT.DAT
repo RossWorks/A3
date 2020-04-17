@@ -1,0 +1,10 @@
+102		Analysis required
+11500	Flight altitude in meters. Input -1 to enforce arbitrary air conditions
+288.15	Temperature SLS [K]
+10325	pressure SLS [Pa]
+1.225	density SLS [kg/m^3]
+0.8		Flight Mach (<0.85)
+0		Angle of incidence relative to fuselage body axis (fixed incidence analysis)
+-10		minimum angle of attack for variable incidence analysis
+10		maximum angle of attack for variable incidence analysis
+0.1		variable incidence step [deg]

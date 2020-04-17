@@ -1,0 +1,17 @@
+201			Nodes for discretisation
+1			Wing Sections
+1			Airfoil to be loaded
+50			Wing Span in m
+1.3			Fuselage diameter (indicates how much of the wing is to be ignored)
+0 0 0 1	coefficient for chord lenght (decreasing power order) [meters]
+35			Sweep angle in degrees
+0 0 0.05 2.5		coefficient for twist (decreasing power order) [DEG]
+3			Diedral in degrees positive if upward
+1			airfoil file for this section
+1			Section end ( fraction of half wingspan)
+0 0 0 1.7	coefficient for chord lenght (decreasing power order) [meters]
+30			Sweep angle in degrees
+0 0 0 0		coefficient for twist (decreasing power order) [DEG]
+10			Diedral in degrees positive if upward
+1			airfoil file for this section
+1.0			Section end (fraction of half wingspan)
