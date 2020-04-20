@@ -9,7 +9,7 @@ ylabel("c_L , c_D")
 legend("c_L","c_D")
 grid on
 subplot(2,2,2)
-plot(rad2deg(AoAs),AeroVector(:,3))
+plot(rad2deg(AoAs),AeroVector(:,3),'g')
 [~,best_alpha_index]=max(AeroVector(:,3));
 title2=sprintf("max. efficiency @ %.2f degrees of incidence",rad2deg(AoAs(best_alpha_index)));
 title(title2)
