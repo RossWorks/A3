@@ -35,5 +35,3 @@ in the INPUT_FILES directory lie several .DAT files:
   3rd flag the airoil being supercritical or not
   4th line is the header line
   from the 5th line until EOF there is the polar for the airfoil
-  
-  AIRPLANE.DAT and FUSELAGE.DAT are not yet used for calculation, but they must be in the folder.
