@@ -1,0 +1,10 @@
+Airplane Aerodynamic Analysis changelog
+
+Version 0.2 (21/4/2020)
+A3is a GNU Octave tool that can estimate the lift and the drag (viscous, induced
+and wave) of an isolatedwing. The estimation can be done for a single incidence
+(101) or for multiple incidences (102).
+The relation between cL and incidence is assumed linear and isbased on X-Foil
+calculations.Several corrections accounts for compressibility,
+sweep angle and diedral. All communications with the program happen via text
+files or graphs plotted by octave. A3 is now on GitHub. 
