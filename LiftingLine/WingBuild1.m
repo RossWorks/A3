@@ -100,7 +100,7 @@ endfor
 %other aerogeometrical characteristics
 AspectRatio=WingSpan^2/WingArea;
 TaperRatio=Wing(end,chord_index)/Wing(1,chord_index);
-Mean_Aero_Chord=Wing(idivide(Nodes,2),chord_index)*(2/3)*(1+TaperRatio+TaperRatio^2)/(1+TaperRatio);
+Mean_Aero_Chord=Wing(idivide(Nodes,int8(2)),chord_index)*(2/3)*(1+TaperRatio+TaperRatio^2)/(1+TaperRatio);
 
 %computing Wing B matrix for PLL calculation (once for every wing)
 PLL_matrix=zeros(Nodes);
@@ -115,7 +115,7 @@ endfor
 
 %computing stations x and z coordinates for graphs
 odd_even=mod(Nodes,2); %two ways to obtain x and z if nodes are odd or even
-halfNodes=idivide(Nodes,2,"ceil"); %half of nodes, rounded up toward +infinity
+halfNodes=idivide(Nodes,int8(2),"ceil"); %half of nodes, rounded up toward +infinity
 if (odd_even==1) %if we have odd stations, the middle station is placed in the origin
 	for i=0:halfNodes-1
 		if(i==0)

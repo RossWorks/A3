@@ -12,7 +12,7 @@ function [AeroArray,CoeffMatrix]=LiftingLine(Wing,FlightEnvironment,B)
 %% Aquiring useful data from the wing matrix
 WingSpan=2*(Wing(1,station_y))/cos(pi/(Nodes+1)); %inverse formula: from 1st station we obtain the Wingspan
 TaperRatio=Wing(end,chord_index)/Wing(1,chord_index);
-Mean_Aero_Chord=Wing(idivide(Nodes,2,"ceil"),chord_index)*(2/3)*(1+TaperRatio+TaperRatio^2)/(1+TaperRatio);
+Mean_Aero_Chord=Wing(idivide(Nodes,int8(2),"ceil"),chord_index)*(2/3)*(1+TaperRatio+TaperRatio^2)/(1+TaperRatio);
 phi=acos(Wing(:,station_y)/(WingSpan/2)); %angle coordinate for every station
 V=FlightEnvironment(Mach_index)*sqrt(1.4*287*FlightEnvironment(T_index)); %True Air Speed [m/s]
 Reynolds=FlightEnvironment(rho_index)*V*Mean_Aero_Chord/FlightEnvironment(mi_index);
